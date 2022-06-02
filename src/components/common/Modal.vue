@@ -4,11 +4,11 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="modal-header">
-            <slot name="header">경고</slot>
+            <slot name="header">할 일을 입력하세요.</slot>
           </div>
 
           <div class="modal-body">
-            <slot name="body">할 일을 입력하세요.</slot>
+            <slot name="body"></slot>
           </div>
 
           <div class="modal-footer">
@@ -16,7 +16,7 @@
               <button
                 class="modal-default-button"
                 @click="$emit('close')"
-              >OK</button>
+              >확인</button>
             </slot>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default {
 }
 
 .modal-default-button {
-  float: right;
+
 }
 
 /*
